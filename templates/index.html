@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body>
+    <h1>word count</h1>
+    <a  href="{% url 'aboutme' %}" style="color:red;text-decoration : none"><h2>About me</h2></a>
+
+    <p>welcome in my word count project</p>
+    <form action="{% url 'count' %}">
+    <textarea name="text_area"></textarea>
+    <br>
+    <input type="submit" value="count!" >
+    <br>
+    
+    </form>
+
+</body>
+</html>
+
+    

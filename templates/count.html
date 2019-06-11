@@ -1,0 +1,18 @@
+<html><head><title>Nsfuntu s</title></head>
+<body>
+    <h1>count page</h1>
+    <a  href="{% url 'home' %}" style="color:red;text-decoration : none"><h2>Click Here For Homepage</h2></a>
+    <a  href="{% url 'aboutme' %}" style="color:red;text-decoration : none"><h2>About me</h2></a>
+
+    <h2>your text is here</h2>
+    {{text_area}}
+    <br>
+    <h2>counted</h2>
+totel words in you text file = {{words}}
+<br><br/>
+{% for words,value in repeat %}
+{{words}} = {{value}}
+<br>
+{% endfor %}
+    
+</body></html>
